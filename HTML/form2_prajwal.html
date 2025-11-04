@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validated Form</title>
+</head>
+<body>
+
+    <h2>Validated Form</h2>
+
+    <form>
+        <!-- First Name with maxlength validation -->
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" maxlength="10" required>
+        <br><br>
+
+        <!-- Last Name with maxlength validation -->
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" maxlength="10" required>
+        <br><br>
+
+        <!-- ZIP code with pattern validation (5 digits only) -->
+        <label for="zip">ZIP Code:</label>
+        <input type="text" id="zip" name="zip" pattern="[0-9]{5}" title="ZIP code must be 5 digits" required>
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
