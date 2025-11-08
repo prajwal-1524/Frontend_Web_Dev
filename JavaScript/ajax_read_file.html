@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AJAX Read File</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="ajax_read_file.js"></script>
+<style>body{font-family:sans-serif;}</style>
+</head>
+<body class="bg-slate-50 flex items-center justify-center min-h-screen p-4">
+<div class="bg-white rounded-xl shadow-lg p-8 w-full max-w-xl text-center">
+<h1 class="text-2xl font-bold mb-4">AJAX: Read File</h1>
+<button onclick="readFile()" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Read File</button>
+<div class="mt-6 text-left">
+<h2 class="font-semibold mb-2">File Contents:</h2>
+<div id="output" class="bg-slate-100 p-4 rounded whitespace-pre-wrap">Click "Read File" to see the content here.</div>
+</div>
+</div>
+
+</body>
+</html>
