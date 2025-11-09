@@ -1,0 +1,35 @@
+ body {
+            font-family: Arial, sans-serif;
+            background: #f7f9ee;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        h1 {
+            color: #2471a3;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #185a86;
+            margin-top: 20px;
+        }
+        [href^="https"] {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        [src$=".jpg"] {
+            border: 3px solid #f39c12;
+            margin: 10px;
+            border-radius: 4px;
+        }
+        [title*="important"] {
+            font-size: 1.2em;
+            color: #e74c3c;
+        }

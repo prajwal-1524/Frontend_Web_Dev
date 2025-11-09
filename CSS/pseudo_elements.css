@@ -1,0 +1,93 @@
+
+ body {
+            font-family: Arial, sans-serif;
+            background: #f7f9ee;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 700px;
+            margin: 30px auto;
+            background: #fff;
+            border: 2px solid #b77c6a;
+            padding: 18px 18px 24px 18px;
+        }
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            font-family: serif;
+            color: #111;
+        }
+        .pseudo-demo {
+            position: relative;
+            margin-bottom: 10px;
+        }
+        .pseudo-demo::before {
+            content: "H";
+            color: #e60000;
+            font-size: 2.5em;
+            font-weight: bold;
+            font-family: serif;
+            margin-right: 2px;
+        }
+        .pseudo-demo .before-blue {
+            display: inline;
+            color: #0015e6;
+            font-size: 2.5em;
+            font-weight: bold;
+            font-family: serif;
+        }
+        .pseudo-demo .main-text {
+            color: #8bc34a;
+            font-size: 2.5em;
+            font-family: serif;
+            font-weight: 500;
+            margin-left: 10px;
+        }
+        .pseudo-demo .desc-text {
+            display: block;
+            font-size: 1.2em;
+            color: #222;
+            margin-top: 0.5em;
+        }
+        .pseudo-demo::after {
+            content: "....bye!";
+            display: block;
+            color: #e60000;
+            font-size: 1.3em;
+            font-family: serif;
+            font-weight: bold;
+            margin-top: 6px;
+        }
+        .input-row {
+            margin: 16px 0 10px 0;
+        }
+        label {
+            font-size: 1.1em;
+            margin-right: 8px;
+        }
+        input[type="text"] {
+            font-size: 1.1em;
+            padding: 4px 8px;
+            border: 1.5px solid #222;
+            border-radius: 3px;
+        }
+        input::placeholder {
+            color: #e60000;
+            font-style: italic;
+        }
+        .selection-demo {
+            background: #0015e6;
+            color: #fff;
+            font-size: 1.2em;
+            padding: 4px 6px;
+            margin-top: 18px;
+            border-radius: 2px;
+            font-family: Arial, sans-serif;
+            width: fit-content;
+        }
+        ::selection {
+            background: #0015e6;
+            color: #fff;
+        }
+        
