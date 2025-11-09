@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Attribute Selectors</title>
+    <link rel="stylesheet" href="attribute_selectors.css">
+</head>
+<body>
+    <div class="container">
+      
+        
+        <div class="grid">
+            <div class="card">
+                <div class="card-header">1. [attribute] Selector</div>
+                <div class="description">Selects elements with the specified attribute, regardless of value.</div>
+                <div class="code-block">[data-required] { border-left: 3px solid #e53e3e; }</div>
+                <div class="demo-area">
+                    <input type="text" placeholder="Required field" data-required>
+                    <input type="text" placeholder="Optional field">
+                    <div data-required>This paragraph has the data-required attribute</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">2. [attribute="value"] Selector</div>
+                <div class="description">Selects elements with the exact specified attribute value.</div>
+                <div class="code-block">[type="submit"] { background-color: #2ecc71; color: white; }</div>
+                <div class="demo-area">
+                    <button type="button">Regular Button</button>
+                    <button type="submit">Submit Button</button>
+                    <input type="submit" value="Submit Input">
+                </div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <div class="card-header">3. [attribute*="value"] Selector</div>
+                <div class="description">Selects elements whose attribute value contains the specified word in a space-separated list.</div>
+                <div class="code-block">[class*="highlight"] { background-color: #f1c40f; }</div>
+                <div class="demo-area">
+                    <div class="highlight-example">This paragraph has the highlight class</div>
+                    <div>This paragraph doesn't have highlight</div>
+                    <div class="demo-text">This won't be selected (no exact match)</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">4. [attribute^="value"] Selector</div>
+                <div class="description">Selects elements whose attribute value is exactly "value" or begins with "value-".</div>
+                <div class="code-block">[lang^="en"] { border-bottom: 2px dotted #9b59b6; }</div>
+                <div class="demo-area">
+                    <div lang="en">English content</div>
+                    <div lang="en-US">American English content</div>
+                    <div lang="en-GB">British English content</div>
+                    <div lang="fr">French content (not selected)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
