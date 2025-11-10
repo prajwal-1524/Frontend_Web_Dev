@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Map Image Map</title>
+</head>
+<body>
+
+  <h2>Interactive World Map</h2>
+
+ 
+  <img 
+    src="Html_images/worldmap.png"
+    alt="World Map"
+    usemap="#worldmap"
+    width="800"
+  >
+
+  <!-- Clickable areas defined here -->
+  <map name="worldmap">
+
+    <!-- North America (rectangle area) -->
+    <area 
+      shape="rect" 
+      coords="60,90,180,180"
+      href="https://en.wikipedia.org/wiki/North_America"
+      alt="North America"
+      title="North America"
+    >
+
+    <!-- Europe (circular area) -->
+    <area 
+      shape="circle" 
+      coords="410,110,40"
+      href="https://en.wikipedia.org/wiki/Europe"
+      alt="Europe"
+      title="Europe"
+    >
+
+    <!-- Australia (polygon area) -->
+    <area 
+      shape="poly" 
+      coords="620,270,700,320,750,400,670,380"
+      href="https://en.wikipedia.org/wiki/Australia"
+      alt="Australia"
+      title="Australia"
+    >
+  </map>
+
+</body>
+</html>
