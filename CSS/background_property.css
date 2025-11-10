@@ -1,0 +1,41 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Common styling for sections */
+        section {
+            height: 300px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            border: 2px solid #000;
+        }
+
+        /* Scroll background */
+        .scroll {
+            background-image: url('background.jpeg');
+            background-repeat: repeat;
+            background-attachment: scroll; /* Scrolls with content */
+            background-color: #3498db;
+        }
+
+        /* Fixed background */
+        .fixed {
+            background-image: url('background.jpeg');
+            background-repeat: repeat;
+            background-attachment: fixed; /* Stays fixed */
+            background-color: #e74c3c;
+        }
+
+        /* Repeat-X background */
+        .repeat {
+            background-image: url('background.jpeg');
+            background-repeat: repeat-x; /* Repeats horizontally */
+            background-attachment: scroll;
+            background-color: #2ecc71;
+        }
