@@ -9,3 +9,8 @@ div > p {
 }
 
 
+/* Next sibling combinator */
+h2 + p {
+  color: red;
+}
+
