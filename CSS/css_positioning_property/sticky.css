@@ -1,18 +1,13 @@
-    .container {
-        height: 300px;
-        overflow: auto;
-        border: 2px solid black;
-        padding: 10px;
-    }
+.sticky-box {
+    position: sticky;
+    top: 50px;               /* Threshold for sticking */
+    background-color: yellow;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid orange;
+}
 
-    .sticky-box {
-        position: sticky;
-        top: 0;                 /* Stick when top reaches 0px from container */
-        background-color: yellow;
-        padding: 10px;
-        border: 1px solid orange;
-    }
-
-    .content {
-        height: 600px;           /* Makes container scrollable */
-    }
+.content {
+    height: 1200px;          /* Enough content to make the page scroll */
+    background: linear-gradient(white, lightgray);
+}
