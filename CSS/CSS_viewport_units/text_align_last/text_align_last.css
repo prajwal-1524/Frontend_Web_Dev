@@ -1,0 +1,7 @@
+.last-line-right {
+    text-align: justify;       /* Justify all lines */
+    text-align-last: right;    /* Only the last line aligns to the right */
+    width: 300px;              /* Set a width to see effect clearly */
+    border: 1px solid black;   /* Optional: to visualize the block */
+    padding: 10px;
+}
