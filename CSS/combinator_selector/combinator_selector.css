@@ -1,0 +1,11 @@
+/* Descendant combinator */
+div p {
+  color: blue;
+}
+
+/* Child combinator */
+div > p {
+  font-weight: bold;
+}
+
+
