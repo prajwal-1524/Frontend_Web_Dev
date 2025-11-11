@@ -14,3 +14,7 @@ h2 + p {
   color: red;
 }
 
+/* Subsequent sibling combinator */
+h2 ~ p {
+  background-color: yellow;
+}
