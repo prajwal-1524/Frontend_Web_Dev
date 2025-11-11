@@ -1,0 +1,6 @@
+/* Paragraph height using viewport height */
+p {
+  height: 50vh;
+  background-color: lightblue;
+  padding: 10px;
+}
